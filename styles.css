@@ -1,3 +1,8 @@
+html, body {
+    height: 100%; /* Đặt chiều cao của html và body là 100% */
+    margin: 0; /* Bỏ margin mặc định */
+}
+
 /* Reset Styles */
 * {
     margin: 0;
@@ -36,6 +41,76 @@ header {
     margin: auto;
     transition: filter 0.1s ease; /* Hiệu ứng chuyển đổi */
 }
+
+/*hinhnenworld2024*/
+.world2024 {
+    background-image: url('image/tải xuống.jfif'); /* Đường dẫn tới hình nền */
+    background-size: cover; /* Phủ đầy diện tích */
+    background-position: center; /* Căn giữa hình nền */
+    background-repeat: no-repeat; /* Không lặp lại hình nền */
+    height: 70vh; /* Chiều cao của section bằng 100% chiều cao viewport */
+    color: white; /* Màu chữ */
+    display: flex; /* Căn chỉnh nội dung */
+    flex-direction: column; /* Chiều dọc */
+    justify-content: center; /* Giữa theo chiều dọc */
+    align-items: center; /* Giữa theo chiều ngang */
+}
+.world2024-content {
+    text-align: center; /* Căn giữa nội dung trong khối */
+    color: white; /* Màu chữ */
+    max-width: 800px; /* Đặt chiều rộng tối đa cho nội dung */
+    margin-left: 0; /* Đảm bảo không có khoảng cách bên trái */
+}
+
+.world2024-label,
+.world2024-content h1,
+.world2024-content p {
+    text-align: left; /* Căn trái cho từng dòng chữ */
+    margin: 0; /* Xóa bỏ khoảng cách mặc định */
+    padding: 0; /* Xóa bỏ khoảng cách mặc định */
+}
+
+/* Nếu muốn các phần tử này có chiều rộng nhất định để căn giữa chúng */
+.world2024-content {
+    width: 100%; /* Đảm bảo nội dung chiếm hết chiều rộng */
+    max-width: 600px; /* Chiều rộng tối đa của nội dung */
+    margin-left: 0; /* Đảm bảo căn trái */
+}
+.btn-xem-ngay {
+    display: inline-flex; /* Sử dụng flex để căn giữa */
+    align-items: center; /* Căn giữa dọc */
+    background-color: #00BFFF; /* Màu nền xanh trời */
+    color: white; /* Màu chữ trắng */
+    padding: 10px 20px; /* Khoảng cách bên trong */
+    margin-top: 20px; /* Khoảng cách trên nút */
+    border-radius: 5px; /* Bo tròn góc */
+    text-decoration: none; /* Bỏ gạch chân */
+    font-size: 16px; /* Kích thước chữ */
+    transition: background-color 0.3s; /* Hiệu ứng chuyển màu */
+}
+
+.btn-xem-ngay:hover {
+    background-color: #0099cc; /* Màu nền khi hover */
+}
+
+.icon-arrow {
+    width: 30px; /* Độ rộng của mũi tên */
+    height: 30px; /* Độ cao của mũi tên */
+    background-color: black; /* Màu nền đen */
+    border-radius: 50%; /* Bo tròn hoàn toàn */
+    display: flex; /* Sử dụng flex để căn giữa */
+    align-items: center; /* Căn giữa dọc */
+    justify-content: center; /* Căn giữa ngang */
+    margin-right: 10px; /* Khoảng cách bên phải */
+    color: white; /* Màu mũi tên trắng */
+}
+
+.icon-arrow::before {
+    content: '→'; /* Mũi tên sang phải */
+    font-size: 16px; /* Kích thước chữ */
+}
+
+
 
 /* Khi hover, chuyển sang màu đỏ */
 .logo:hover {
